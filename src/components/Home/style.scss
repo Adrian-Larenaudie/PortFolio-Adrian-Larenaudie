@@ -1,0 +1,28 @@
+@import '../../styles/_vars.scss';
+
+.home {
+  &__main-text {
+    position: absolute;
+    top: 20%;
+    left: 2rem;
+  }
+  &__title {
+    font-size: 4.5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  &__description {
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #66ff66;
+  }
+}
+

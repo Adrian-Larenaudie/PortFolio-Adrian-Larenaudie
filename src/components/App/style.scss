@@ -1,0 +1,72 @@
+@import '../../styles/_vars.scss';
+
+.app {
+  overflow-y: auto;
+  scroll-snap-type: mandatory;
+  width: 100%;
+  text-align: center;
+  background-color: $darkBackground;
+  font-weight: 100;
+  color: $darkText;
+  transition: $fastTransition;
+
+  /* Mode light changements */
+  &--light {
+    background-color: $lightBackground;
+    color: $lightText;
+    /* Navigation Component */
+    .navigation {
+      &__link {
+        border-color: $lightText;
+        &:hover {
+          color: $lightHover;
+          &:before {
+            border-color: $lightHover;
+            background-color: $lightHover;
+          }
+        }
+        &:before {
+          border-color: $lightText;
+        }
+        &--active:before {
+          background-color: $lightText;
+        }
+      }   
+    }
+    svg {
+      fill: $lightText;
+      &:hover {
+        fill: $lightHover;
+      }
+    }
+  }
+}
+
+/* Shared page styles */
+.page {
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+  background-color: inherit;
+  width: 80%;
+  height: 100vh;
+  float: right;
+  position: relative;
+  &__background {
+    overflow: hidden;
+    transition: $fastTransition;
+    letter-spacing: -2rem;
+    position: absolute;
+    font-size: 25rem;
+    top: 50%;
+    right: 2rem;
+    color: $darkTextBackground;
+    z-index: 0;
+  }
+}
+
+/* Pages components */
+  .app--light .page__background {
+    color: $ligthTextBackground;
+  }
+
+

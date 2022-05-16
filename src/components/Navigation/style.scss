@@ -1,0 +1,80 @@
+@import '../../styles/_vars.scss';
+
+.navigation {
+  z-index: 1;
+  background-color: inherit;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100vh;
+
+  &__logo {
+    text-transform: uppercase;
+    font-size: 6rem;
+    padding: 1rem 0 5rem 0;
+    font-weight: 900;
+    span {
+      color: #66ff66;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem .5rem;
+    text-transform: uppercase;
+    &:before {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      border: 2px solid $darkText;
+      transition: $fastTransition;
+      position: absolute;
+      left: 2rem;
+    }
+
+    &--active {
+      text-decoration:underline;
+      &:before {
+        background-color: $darkText;
+      }
+    }
+  }
+
+  &__link:hover {
+    transition: $fastTransition;
+    color: $darkHover;
+    &::before {
+      transition: $fastTransition;
+      border-color: $darkHover;
+      background-color: $darkHover;
+    }
+    
+  }
+
+  &__footer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    svg {
+        margin-bottom: 1rem;
+        fill: $darkText;
+        height: 3rem;
+        transition: $fastTransition;
+        &:hover {
+          transition: $fastTransition;
+          fill: $darkHover;
+        }
+    }
+  }
+}
+

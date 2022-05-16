@@ -1,0 +1,17 @@
+@import '../../styles/_vars.scss';
+
+.contact {
+  background-color: inherit;
+  width: 82%;
+  float: right;
+  position: relative;
+  height: 100vh;
+  &__background {
+    letter-spacing: -2rem;
+    position: absolute;
+    font-size: 17rem;
+    top: 50%;
+    right: 2rem;
+    color: $darkTextBackground;
+  }
+}

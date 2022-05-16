@@ -1,0 +1,60 @@
+@import '../../styles/_vars.scss';
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  .someWords {
+    position: relative;
+    z-index: 1;
+    margin: 2rem;
+    max-width: 40%;
+
+    &__title {
+      font-size: 3.5rem;
+      text-align: left;
+      margin-bottom: 3rem;
+    }
+    &__text {
+      font-size: 1.3rem;
+      text-align: left;
+      margin-bottom: 2rem;
+      line-height: 2rem;
+    }
+    &__link {
+      cursor: pointer;
+      font-style: italic;
+      color: #66ff66;
+      &:hover {
+        transition: $fastTransition;
+        color: $darkText;
+      }
+    }
+  }
+  .cv {
+    position: relative;
+    z-index: 1;
+    margin: 2rem;
+    &__title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    &__picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $darkTextBackground;
+      width: 350px;
+      height: 350px;
+      border: solid 10px $darkText;
+      margin: 3rem;
+      border-radius: .3rem;
+    }
+    &__text {
+      color: #66ff66;
+      font-size: 3rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-style: italic;
+    }
+  }
+}

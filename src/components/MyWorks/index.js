@@ -1,5 +1,9 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import './style.scss';
+import dragDrop from '../../assets/img/dragDropPuzzle.png';
+import memory from '../../assets/img/memory.png';
+import starwars from '../../assets/img/starWarsChallenge.png';
+import timer from '../../assets/img/timer.png';
 
 const MyWorks = () => (
   <div id="myWorks" className="myworks page">
@@ -36,7 +40,7 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src="" /></a>
+        <a target="_blank" href="#"><img className="worksContainer__picture content" alt="" src={timer} /></a>
         <p className="worksContainer__label">PortFolio-Adrian-Larenaudie</p>
       </div>
 
@@ -49,7 +53,7 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src="" /></a>
+        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src={timer} /></a>
         <p className="worksContainer__label">RetroWave-Timer-ft-Wilhelm-cry</p>
       </div>
 
@@ -62,7 +66,7 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src="" /></a>
+        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src={starwars} /></a>
         <p className="worksContainer__label">Star-Wars-Challenge-BCode</p>
       </div>
 
@@ -75,7 +79,7 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src="" /></a>
+        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src={memory} /></a>
         <p className="worksContainer__label">Poke-Memory-Game</p>
       </div>
 
@@ -88,7 +92,7 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src="" /></a>
+        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src={dragDrop} /></a>
         <p className="worksContainer__label">DragAndDropPuzzleReact</p>
       </div>
     </div>

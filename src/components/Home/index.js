@@ -66,7 +66,8 @@ const Home = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom"
-        >Bienvenue sur mon site, <br /> je suis Adrian
+        >Bienvenue sur mon site, <br /> je suis
+          <span> Adrian</span>
         </h1>
 
         <p

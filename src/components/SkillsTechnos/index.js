@@ -81,7 +81,8 @@ const SkillsTechnos = () => (
         data-aos-once="false"
         data-aos-delay="200"
         data-aos-duration="500"
-      >Soft Skills
+      >Soft
+        <span> Skills</span>
       </h2>
       <ul className="softSkills__liste">
         <li

@@ -9,8 +9,15 @@
   color: $darkText;
   transition: $fastTransition;
 
+  span {
+    color: $darkGreen;
+  }
+
   /* Mode light changements */
   &--light {
+    span {
+      color: #fff;
+    }
     font-weight: 900;
     background-color: $lightBackground;
     color: $lightText;
@@ -37,6 +44,63 @@
       fill: $lightText;
       &:hover {
         fill: $lightHover;
+      }
+    }
+    .home__description {
+      color: #fff;
+    }
+    .page {
+      a {
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        &:hover {
+          color: $lightHover;
+        }
+      }
+      svg {
+        path {
+          fill: $lightText
+        }
+      }
+    }
+    .cv__picture {
+      border-color: $lightText;
+      background-color: $lightBackground;
+    }
+    .cv__text {
+      color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        &:hover {
+          color: $lightHover;
+        }
+    }
+    .training {
+      border-color: $lightText;
+    }
+    .worksContainer__picture {
+      border: 5px solid #fff;
+      border-radius: .3rem;
+      &:hover {
+        border-color: $lightHover
+      }
+    }
+    .formContainer {
+      &__message {
+        font-weight: 600;
+        color: $lightText;
+        background-color: $ligthTextBackground;
+      }
+      &__user-email {
+        font-weight: 600;
+        color: $lightText;
+        background-color: $ligthTextBackground;
+      }
+      &__submit {
+      background-color: #fff;
+        &:hover {
+          background-color: $lightText;
+          color: $lightBackground;
+        }
       }
     }
   }

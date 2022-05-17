@@ -29,7 +29,8 @@ const About = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom"
-        >Some words
+        >Some
+          <span> words</span>
         </h2>
         <p
           className="someWords__text"
@@ -60,7 +61,7 @@ const About = () => {
           data-aos-anchor-placement="top-bottom"
         >
           Ce qui à l'origine, était un projet de reconversion est
-          très vite devenu une passion.
+          très vite devenu une passion,
           <br />
           <Link
             className="someWords__link"
@@ -68,10 +69,10 @@ const About = () => {
             duration={500}
             to={skillsLink.id}
             key={skillsLink.path}
-          > Découvrez mes compétences.
+          > voici mes compétences.
           </Link>
           <br />
-          Depuis ma soif d'apprendre n'a de cesse de croître et
+          Depuis ma soif d'apprendre n'a cessé de croître et
           l'univers du code m'accompagne au quotidien.
         </p>
         <p
@@ -85,14 +86,14 @@ const About = () => {
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom"
         >
-          Vous êtes intéressé,
+          Vous souhaitez me contacter,
           <Link
             className="someWords__link"
             smooth="true"
             duration={500}
             to={contactLink.id}
             key={contactLink.path}
-          > contactez moi.
+          > c'est par ici.
           </Link>
         </p>
       </div>
@@ -108,9 +109,8 @@ const About = () => {
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom"
       >
-        <h2 className="cv__title">Mon CV</h2>
         <div className="cv__picture">
-          <p className="cv__text">juste ici</p>
+          <p className="cv__text">voir mon cv</p>
         </div>
       </div>
 

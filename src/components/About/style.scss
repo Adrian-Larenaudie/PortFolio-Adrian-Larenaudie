@@ -23,10 +23,10 @@
     &__link {
       cursor: pointer;
       font-style: italic;
-      color: #66ff66;
+      color: $darkGreen;
       &:hover {
         transition: $fastTransition;
-        color: $darkText;
+        color: $darkHover;
       }
     }
   }
@@ -43,18 +43,22 @@
       align-items: center;
       justify-content: center;
       background-color: $darkTextBackground;
-      width: 350px;
-      height: 350px;
-      border: solid 10px $darkText;
-      margin: 3rem;
-      border-radius: .3rem;
+      width: 300px;
+      height: 300px;
+      border: solid 4px $darkText;
+      margin: 4rem;
+      border-radius: .1rem;
     }
     &__text {
-      color: #66ff66;
-      font-size: 3rem;
+      color: $darkGreen;
+      font-size: 2rem;
       text-transform: uppercase;
       cursor: pointer;
       font-style: italic;
+      &:hover {
+        transition: $fastTransition;
+        color: $darkHover;
+      }
     }
   }
 }

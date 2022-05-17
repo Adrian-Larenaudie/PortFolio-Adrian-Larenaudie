@@ -1,17 +1,55 @@
 @import '../../styles/_vars.scss';
 
 .contact {
-  background-color: inherit;
-  width: 82%;
-  float: right;
-  position: relative;
-  height: 100vh;
-  &__background {
-    letter-spacing: -2rem;
-    position: absolute;
-    font-size: 17rem;
-    top: 50%;
-    right: 2rem;
-    color: $darkTextBackground;
+  .page__background {
+    font-size: 15rem;
+    transform: rotate(90deg);
+    margin: 0;
+    top: 20rem
+  };
+  .formContainer {
+    position: relative;
+    z-index: 42;
+    &__form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 3rem;
+    }
+    &__message {
+      margin-bottom: 2rem;
+      width: 100%;
+      background-color: $darkTextBackground;
+      border: none;
+      padding: 2rem;
+      font-size: 1.5rem;
+      color: #ffffff;
+      resize: none;
+    }
+    &__user-email {
+      margin-bottom: 2rem;
+      width: 65%;
+      background-color: $darkTextBackground;
+      border: none;
+      padding: 2rem;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+    &__submit {
+      width: 197px;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      color: $darkBackground;
+      background-color: $darkGreen;
+      font-weight: 900;
+      border: none;
+      font-style: italic;
+      &:hover {
+        background-color: $darkHover;
+      }
+    }
   }
 }
+
+

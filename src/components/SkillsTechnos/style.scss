@@ -21,7 +21,6 @@
         }
       }
       svg {
-        fill: $darkBackground;
         height: 4rem;
         width: 4rem;
         path {
@@ -67,7 +66,12 @@
     &__text {
       a {
         font-style: italic;
-        color: #66ff66;
+        color: $darkGreen;
+        transition: $fastTransition;
+        &:hover {
+          color: $darkHover;
+          transition: $fastTransition;
+        }
       }
     }
   }

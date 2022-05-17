@@ -25,8 +25,17 @@ const App = () => {
       <Routes>
         <Route
           path="/"
-          element={<><Navigation themeDark={themeDark} />
-          <Theme setThemeDark={setThemeDark} themeDark={themeDark} /><Home /><About /> <SkillsTechnos /> <MyWorks /> <Contact /></>}
+          element={(
+            <>
+              <Navigation themeDark={themeDark} />
+              <Theme setThemeDark={setThemeDark} themeDark={themeDark} />
+              <Home />
+              <About />
+              <SkillsTechnos />
+              <MyWorks />
+              <Contact />
+            </>
+          )}
         />
         <Route path="/thanks" element={<Thanks />} />
         <Route path="*" element={<Error />} />

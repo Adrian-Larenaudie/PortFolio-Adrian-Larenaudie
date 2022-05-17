@@ -6,12 +6,12 @@
   width: 100%;
   text-align: center;
   background-color: $darkBackground;
-  font-weight: 100;
   color: $darkText;
   transition: $fastTransition;
 
   /* Mode light changements */
   &--light {
+    font-weight: 900;
     background-color: $lightBackground;
     color: $lightText;
     /* Navigation Component */

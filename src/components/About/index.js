@@ -10,7 +10,7 @@ const About = () => {
 
       <h1
         className="page__background"
-        data-aos="fade-right"
+        data-aos="fade-left"
         data-aos-mirror="true"
         data-aos-once="false"
         data-aos-delay="900"

@@ -14,7 +14,7 @@ const SkillsTechnos = () => (
   <div id="skills" className="skillsTechnos page">
     <h1
       className="page__background"
-      data-aos="fade-right"
+      data-aos="fade-up"
       data-aos-mirror="true"
       data-aos-once="false"
       data-aos-delay="900"
@@ -68,7 +68,8 @@ const SkillsTechnos = () => (
       <h2 className="training__title">Formation Développeur Web
       </h2>
       <p className="training__text">Ecole
-        <a target="_blank" href="https://oclock.io/?utm_source=google&utm_medium=cpc&utm_campaign=Brand&adgroupname=Oclock&keyword=oclock&gclid=CjwKCAjw7IeUBhBbEiwADhiEMWhpCi3SVz8Menlmjw7R5L1lFWYRHIHSS9mvcpWBQX2g11rUkbVZkhoC92wQAvD_BwE" rel="noreferrer"> O'clock</a>
+        <a target="_blank" href="https://oclock.io/?utm_source=google&utm_medium=cpc&utm_campaign=Brand&adgroupname=Oclock&keyword=oclock&gclid=CjwKCAjw7IeUBhBbEiwADhiEMWhpCi3SVz8Menlmjw7R5L1lFWYRHIHSS9mvcpWBQX2g11rUkbVZkhoC92wQAvD_BwE" rel="noreferrer"> O'clock </a>
+        promo Boson
       </p>
     </div>
 

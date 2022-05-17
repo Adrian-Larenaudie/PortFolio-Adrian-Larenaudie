@@ -1,17 +1,34 @@
 @import '../../styles/_vars.scss';
 
-.myworks {
-  background-color: inherit;
-  width: 82%;
-  float: right;
+.page__title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
+  text-align: left;
+  margin-left: 5rem;
+  span {
+    color: #66ff66;
+  }
+}
+
+.worksContainer {
   position: relative;
-  height: 100vh;
-  &__background {
-    letter-spacing: -2rem;
-    position: absolute;
-    font-size: 17rem;
-    top: 50%;
-    right: 2rem;
-    color: $darkTextBackground;
+  z-index: 42;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  &__item {
+    width: 20%;
+    height: 250px;
+    border: 3px solid $darkText;
+    border-radius: .2rem;
+    margin: 4rem;
+  }
+  &__picture {
+    width: 100%;
+    height: 175px;
+  }
+  &__label {
+    padding-top: 1rem;
   }
 }

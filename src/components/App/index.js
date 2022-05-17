@@ -8,9 +8,10 @@ import Contact from '../Contact';
 import Home from '../Home';
 import MyWorks from '../MyWorks';
 import Navigation from '../Navigation';
+import SkillsTechnos from '../SkillsTechnos';
+import Thanks from '../Thanks';
 import './style.scss';
 import 'aos/dist/aos.css';
-import SkillsTechnos from '../SkillsTechnos';
 
 const App = () => {
   const [themeDark, setThemeDark] = useState(true);
@@ -21,13 +22,13 @@ const App = () => {
 
   return (
     <div className={`app ${!themeDark ? 'app--light' : ''}`}>
-      <Navigation themeDark={themeDark} />
-      <Theme setThemeDark={setThemeDark} themeDark={themeDark} />
       <Routes>
         <Route
           path="/"
-          element={<><Home /><About /> <SkillsTechnos /> <MyWorks /> <Contact /></>}
+          element={<><Navigation themeDark={themeDark} />
+          <Theme setThemeDark={setThemeDark} themeDark={themeDark} /><Home /><About /> <SkillsTechnos /> <MyWorks /> <Contact /></>}
         />
+        <Route path="/thanks" element={<Thanks />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>

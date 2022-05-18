@@ -19,7 +19,7 @@ const Theme = ({ setThemeDark, themeDark }) => {
       data-aos-anchor-placement="top-bottom"
     >
       <div className="theme__switcher">
-        <input onChange={handleChange} type="checkbox" id="input" value="true" />
+        <input checked={!themeDark} onChange={handleChange} type="checkbox" id="input" value="true" />
         <label htmlFor="input">Theme {themeDark ? 'Light' : 'Dark'}</label>
         <label className="label" htmlFor="input">
           <span className="slider-check" />

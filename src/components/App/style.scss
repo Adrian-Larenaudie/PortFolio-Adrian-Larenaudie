@@ -15,6 +15,19 @@
 
   /* Mode light changements */
   &--light {
+    .thanks, .notFound {
+      border-color: #fff;
+    }
+    .thanks__link, .notFound__link {
+      background-color: #fff;
+        &:hover {
+          background-color: $lightText;
+          color: $lightBackground;
+        }
+    }
+    .notFound__background, .thanks__background {
+      color: $ligthTextBackground;
+    }
     span {
       color: #fff;
     }

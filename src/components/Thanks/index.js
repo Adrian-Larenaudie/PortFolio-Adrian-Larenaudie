@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Theme from '../Theme';
 import './style.scss';
 
-const Thanks = () => (
+const Thanks = ({ themeDark, setThemeDark }) => (
   <div className="container">
-    <Theme />
     <div
       className="thanks"
       data-aos="fade"
@@ -16,6 +16,7 @@ const Thanks = () => (
       data-aos-once="false"
       data-aos-anchor-placement="top-bottom"
     >
+      <Theme setThemeDark={setThemeDark} themeDark={themeDark} />
       <h1 className="thanks__background">THANKS.</h1>
       <h1
         className="thanks__title"
@@ -46,5 +47,10 @@ const Thanks = () => (
     </div>
   </div>
 );
+
+Theme.propTypes = {
+  setThemeDark: PropTypes.func.isRequired,
+  themeDark: PropTypes.bool.isRequired,
+};
 
 export default Thanks;

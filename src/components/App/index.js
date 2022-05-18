@@ -37,8 +37,8 @@ const App = () => {
             </>
           )}
         />
-        <Route path="/thanks" element={<Thanks />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/thanks" element={<Thanks setThemeDark={setThemeDark} themeDark={themeDark} />} />
+        <Route path="*" element={<Error setThemeDark={setThemeDark} themeDark={themeDark} />} />
       </Routes>
     </div>
   );

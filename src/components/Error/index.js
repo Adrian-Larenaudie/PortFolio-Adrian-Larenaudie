@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Theme from '../Theme';
 import './style.scss';
 
-const Error = () => (
+const Error = ({ themeDark, setThemeDark }) => (
   <div className="container">
     <div
       className="notFound"
@@ -15,7 +16,7 @@ const Error = () => (
       data-aos-once="false"
       data-aos-anchor-placement="top-bottom"
     >
-      <Theme />
+      <Theme setThemeDark={setThemeDark} themeDark={themeDark} />
       <h1 className="notFound__background">404</h1>
       <h1
         className="notFound__title"
@@ -56,7 +57,7 @@ const Error = () => (
       >Le lien sur lequel vous avez cliquez est peut être cassé ou la page a été retirée
       </p>
       <Link
-        className="thanks__link"
+        className="notFound__link"
         to="/"
         data-aos="fade-up"
         data-aos-offset="200"
@@ -71,5 +72,10 @@ const Error = () => (
     </div>
   </div>
 );
+
+Theme.propTypes = {
+  setThemeDark: PropTypes.func.isRequired,
+  themeDark: PropTypes.bool.isRequired,
+};
 
 export default Error;

@@ -32,7 +32,7 @@ const Navigation = () => {
       </nav>
 
       <nav className="navigation__footer">
-        <a href="#" target="_blank" rel="noreferrer">
+        <a href="https://twitter.com/Railedad?t=qefZIy7mK_0EU7MjhTchsw&s=03" target="_blank" rel="noreferrer">
           <TwitterLogo />
         </a>
         <a href="https://github.com/Adrian-Larenaudie" target="_blank" rel="noreferrer">

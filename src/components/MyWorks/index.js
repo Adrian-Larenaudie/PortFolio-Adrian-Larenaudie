@@ -22,8 +22,8 @@ const MyWorks = () => (
       data-aos-delay="200"
       data-aos-duration="400"
       data-aos-anchor-placement="top-bottom"
-    >Some of my
-      <span> Works</span>
+    >Mes
+      <span> Projets</span>
     </h1>
 
     <div className="worksContainer">

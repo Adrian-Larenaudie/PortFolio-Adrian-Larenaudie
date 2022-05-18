@@ -29,8 +29,8 @@ const About = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom"
-        >Some
-          <span> words</span>
+        >Quelques
+          <span> mots</span>
         </h2>
         <p
           className="someWords__text"
@@ -45,9 +45,9 @@ const About = () => {
         >
           Après 11 années de travail en restauration.
           <br />
-          Une reconversion professionnelle dans le développement web, Juillet 2021.
+          J'entame une reconversion professionnelle dans le développement web en Juillet 2021.
           <br />
-          En autodidacte, puis en formation à l'école O'clock, Janvier 2022.
+          En autodidacte, puis en formation à l'école O'clock à partir de Janvier 2022.
         </p>
         <p
           className="someWords__text"

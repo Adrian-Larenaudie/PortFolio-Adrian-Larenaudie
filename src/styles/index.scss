@@ -16,7 +16,7 @@ body {
   }
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 5px;
 }
 
@@ -25,8 +25,21 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: $darkText;
+  background-color: grey;
   border-radius: 20px;
-  border: 1px solid $darkText;
+  border: 1px solid grey;
+} */
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 

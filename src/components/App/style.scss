@@ -67,7 +67,7 @@
       color: #fff;
     }
     .page {
-      a {
+      .someWords__link, .training__text a {
         color: #fff;
         text-shadow: 1px 1px 1px #000;
         &:hover {
@@ -94,11 +94,13 @@
     .training {
       border-color: $lightText;
     }
-    .worksContainer__picture {
-      border: 5px solid #fff;
+    .worksContainer__label {
+      border: 4px solid #fff;
       border-radius: .3rem;
+      color: $lightText;
       &:hover {
-        border-color: #fff;
+        border-color: $lightHover;
+        color: $lightHover;
       }
     }
     .formContainer {

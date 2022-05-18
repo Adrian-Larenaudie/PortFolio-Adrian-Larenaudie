@@ -110,7 +110,10 @@ const About = () => {
         data-aos-anchor-placement="top-bottom"
       >
         <div className="cv__picture">
-          <p className="cv__text">voir mon cv</p>
+          <a heref="#" className="cv__text">
+            voir mon cv
+            <span> (.pdf)</span>
+          </a>
         </div>
       </div>
 

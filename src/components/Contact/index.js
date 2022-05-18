@@ -47,6 +47,7 @@ const Contact = () => (
         />
         <input type="hidden" name="_next" value="http://localhost:8080/thanks" />
         <input type="hidden" name="_subject" value="New submission!" />
+        <input type="hidden" name="_captcha" value="false" />
         <button
           className="formContainer__submit"
           type="submit"

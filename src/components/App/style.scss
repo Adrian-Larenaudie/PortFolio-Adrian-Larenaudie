@@ -81,7 +81,7 @@
       border: 5px solid #fff;
       border-radius: .3rem;
       &:hover {
-        border-color: $lightHover
+        border-color: #fff;
       }
     }
     .formContainer {
@@ -89,11 +89,17 @@
         font-weight: 600;
         color: $lightText;
         background-color: $ligthTextBackground;
+        &::placeholder {
+          color: $lightText;
+        }
       }
       &__user-email {
         font-weight: 600;
         color: $lightText;
         background-color: $ligthTextBackground;
+        &::placeholder {
+          color: $lightText;
+        }
       }
       &__submit {
       background-color: #fff;

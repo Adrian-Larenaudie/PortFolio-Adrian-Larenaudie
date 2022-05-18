@@ -47,14 +47,18 @@
       height: 300px;
       border: solid 4px $darkText;
       margin: 4rem;
-      border-radius: .1rem;
+      border-radius: .5rem;
     }
     &__text {
+      position: relative;
       color: $darkGreen;
       font-size: 2rem;
       text-transform: uppercase;
       cursor: pointer;
       font-style: italic;
+      span {
+        text-transform: lowercase;
+      }
       &:hover {
         transition: $fastTransition;
         color: $darkHover;

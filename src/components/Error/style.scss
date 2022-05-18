@@ -1,0 +1,66 @@
+@import '../../styles/_vars.scss';
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound {
+  position: relative;
+  border: 5px solid $darkText;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__background {
+    overflow: hidden;
+    transition: $fastTransition;
+    letter-spacing: -2rem;
+    position: absolute;
+    right: 5rem;
+    color: $darkTextBackground;
+    z-index: 0;
+    font-size: 14rem;
+    transform: rotate(90deg);
+    margin: 0;
+    top: 15rem
+  }
+  &__title {
+    position: relative;
+    z-index: 42;
+    font-size: 7rem;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  &__subtitle {
+    position: relative;
+    z-index: 42;
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    position: relative;
+    z-index: 42;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  &__link {
+    position: relative;
+    z-index: 42;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: $darkBackground;
+    background-color: $darkGreen;
+    font-weight: 900;
+    border: none;
+    font-style: italic;
+    &:hover {
+      background-color: $darkHover;
+    }
+  }
+}

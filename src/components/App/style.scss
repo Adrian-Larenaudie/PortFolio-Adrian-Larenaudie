@@ -1,6 +1,10 @@
 @import '../../styles/_vars.scss';
 
 .app {
+  -webkit-user-select: none;
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
   overflow-y: auto;
   scroll-snap-type: mandatory;
   width: 100%;

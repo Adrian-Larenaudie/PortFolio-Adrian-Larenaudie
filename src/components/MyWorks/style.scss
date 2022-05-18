@@ -18,11 +18,16 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   &__item {
-    width: 18%;
+    width: 20%;
     border-radius: .2rem;
-    margin: 1rem 4rem;
+    margin: 4rem 4rem;
   }
-  &__picture {
+  &__label {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
     padding: 3rem;
     border: 3px solid $darkText;
     border-radius: .1rem;
@@ -31,7 +36,8 @@
     transition: $fastTransition;
     &:hover {
       transition: $fastTransition;
-      border-color: $lightHover;
+      border-color: $darkHover;
+      color: $darkHover;
       transform: scale(1.01);
     }
   }

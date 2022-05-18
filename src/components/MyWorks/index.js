@@ -1,10 +1,5 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import './style.scss';
-import portFolio from '../../assets/img/project/portFolio.png';
-import dragDrop from '../../assets/img/project/dragDropPuzzle.png';
-import memory from '../../assets/img/project/memory.png';
-import starwars from '../../assets/img/project/starWarsChallenge.png';
-import timer from '../../assets/img/project/timer.png';
 
 const MyWorks = () => (
   <div id="myWorks" className="myworks page">
@@ -41,8 +36,9 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture content" alt="" src={portFolio} /></a>
-        <p className="worksContainer__label">Mon PortFolio</p>
+        <a target="_blank" href="https://github.com/Adrian-Larenaudie/PortFolio-Adrian-Larenaudie" rel="noreferrer">
+          <p className="worksContainer__label">Mon PortFolio</p>
+        </a>
       </div>
 
       <div
@@ -54,8 +50,9 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src={timer} /></a>
-        <p className="worksContainer__label">Timer Retro Wave</p>
+        <a target="_blank" href="https://github.com/Adrian-Larenaudie/RetroWave-Timer-ft-Wilhelm-cry" rel="noreferrer">
+          <p className="worksContainer__label">Timer Retro Wave</p>
+        </a>
       </div>
 
       <div
@@ -67,8 +64,9 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src={starwars} /></a>
-        <p className="worksContainer__label">Challenge d'intégration Star Wars</p>
+        <a target="_blank" href="https://github.com/Adrian-Larenaudie/Star-Wars-Challenge-BCode" rel="noreferrer">
+          <p className="worksContainer__label">Challenge d'intégration</p>
+        </a>
       </div>
 
       <div
@@ -80,8 +78,9 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src={memory} /></a>
-        <p className="worksContainer__label">Memory Game</p>
+        <a target="_blank" href="https://github.com/Adrian-Larenaudie/Poke-Memory-Game" rel="noreferrer">
+          <p className="worksContainer__label">Memory Game</p>
+        </a>
       </div>
 
       <div
@@ -93,8 +92,9 @@ const MyWorks = () => (
         data-aos-duration="400"
         data-aos-anchor-placement="top-bottom"
       >
-        <a target="_blank" href="#"><img className="worksContainer__picture" alt="" src={dragDrop} /></a>
-        <p className="worksContainer__label">Puzzle Drag And Drop</p>
+        <a target="_blank" href="https://github.com/Adrian-Larenaudie/DragAndDropPuzzleReact" rel="noreferrer">
+          <p className="worksContainer__label">Puzzle Drag And Drop</p>
+        </a>
       </div>
     </div>
   </div>

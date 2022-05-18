@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Theme from '../Theme';
 import './style.scss';
 
+// eslint-disable-next-line react/prop-types
 const Thanks = ({ themeDark, setThemeDark }) => (
   <div className="container">
     <div

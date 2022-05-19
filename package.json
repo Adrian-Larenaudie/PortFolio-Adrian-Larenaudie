@@ -1,6 +1,6 @@
 {
   "name": "portfolio-adrian-larenaudie",
-  "homepage": "https://adrian-larenaudie.github.io/PortFolio-Adrian-Larenaudie",
+  "homepage": "https://Adrian-Larenaudie.github.io/PortFolio-Adrian-Larenaudie",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",

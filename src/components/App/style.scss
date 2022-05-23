@@ -1,4 +1,5 @@
 @import '../../styles/_vars.scss';
+@import '../../styles/responsive.scss';
 
 .app {
   -webkit-user-select: none;
@@ -17,11 +18,42 @@
     color: $darkGreen;
   }
 
-  /* Mode light changements */
+/* Mode light changements */
   &--light {
+    .theme {
+      
+    }
+    .skillsTechnos .technos__container .techSvg {
+      svg {
+        height: 4rem;
+        width: 4rem;
+        path {
+          transition: $slowTransition;
+          fill: $lightText;
+        }
+        circle {
+          fill: #fff;
+        }
+      }
+      p {
+        transition: $slowTransition;
+      }
+      &:hover {
+        p {
+          transition: 0s;
+          color: #fff;
+        }
+        path {
+          transition: 0s;
+          fill: #fff;
+        }
+      }
+    }
+
     .thanks, .notFound {
       border-color: #fff;
     }
+
     .thanks__link, .notFound__link {
       background-color: #fff;
         &:hover {
@@ -29,6 +61,7 @@
           color: $lightBackground;
         }
     }
+
     .notFound__background, .thanks__background {
       color: $ligthTextBackground;
     }
@@ -38,6 +71,7 @@
     font-weight: 900;
     background-color: $lightBackground;
     color: $lightText;
+
     /* Navigation Component */
     .navigation {
       &__link {
@@ -57,16 +91,20 @@
         }
       }   
     }
+
     svg {
       fill: $lightText;
       &:hover {
         fill: $lightHover;
       }
     }
+
     .home__description {
       color: #fff;
     }
+
     .page {
+      overflow: hidden;
       .someWords__link, .training__text a {
         color: #fff;
         text-shadow: 1px 1px 1px #000;
@@ -74,15 +112,10 @@
           color: $lightHover;
         }
       }
-      svg {
-        path {
-          fill: $lightText
-        }
-      }
     }
+
     .cv__picture {
       border-color: $lightText;
-      background-color: $lightBackground;
     }
     .cv__text {
       color: #fff;
@@ -95,12 +128,21 @@
       border-color: $lightText;
     }
     .worksContainer__label {
-      border: 4px solid #fff;
+      box-shadow: 1px 1px 5px $darkTextBackground;
+      border: 4px solid $lightText;
       border-radius: .3rem;
       color: $lightText;
+      &::after, &::before {
+        border-color: #fff;
+      }
       &:hover {
-        border-color: $lightHover;
-        color: $lightHover;
+        text-shadow: 1px 1px 1px #000;
+        border-color: #fff;
+        color: #fff;
+        &::after, &::before {
+          border-color: #fff;
+          background-color: #fff;
+        }
       }
     }
     .formContainer {

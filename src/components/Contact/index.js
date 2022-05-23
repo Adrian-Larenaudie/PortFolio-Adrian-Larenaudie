@@ -45,7 +45,7 @@ const Contact = () => (
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom"
         />
-        <input type="hidden" name="_next" value="http://localhost:8080/thanks" />
+        <input type="hidden" name="_next" value="https://adrian-larenaudie.com/thanks" />
         <input type="hidden" name="_subject" value="New submission!" />
         <input type="hidden" name="_captcha" value="false" />
         <button

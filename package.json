@@ -1,15 +1,13 @@
 {
   "name": "portfolio-adrian-larenaudie",
-  "homepage": "https://Adrian-Larenaudie.github.io/PortFolio-Adrian-Larenaudie",
+  "homepage": "https://adrian-larenaudie.com/",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "lint": "eslint ./src/** --no-error-on-unmatched-pattern",
     "lint:fix": "eslint --fix ./src/** --no-error-on-unmatched-pattern",
     "clean": "rm -rf dist",
-    "clean:all": "rm -rf dist node_modules yarn.lock package-lock.json",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "clean:all": "rm -rf dist node_modules yarn.lock package-lock.json"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",

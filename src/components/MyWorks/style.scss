@@ -18,12 +18,12 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   &__item {
-    width: 20%;
+    width: 28%;
     border-radius: .2rem;
     margin: 4rem 4rem;
   }
   &__label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,11 +34,41 @@
     width: 100%;
     overflow: hidden;
     transition: $fastTransition;
+    &:before {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      border: 2px solid $darkGreen;
+      transition: $fastTransition;
+      position: absolute;
+      left: 2rem;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      border: 2px solid $darkGreen;
+      transition: $fastTransition;
+      position: absolute;
+      right: 2rem;
+    }
     &:hover {
       transition: $fastTransition;
-      border-color: $darkHover;
-      color: $darkHover;
+      border-color: $darkGreen;
+      color: $darkGreen;
       transform: scale(1.01);
+      &::before {
+        transform: scale(6.1);
+        background-color: $darkGreen;
+        border-color: $darkGreen;
+      }
+      &::after {
+        transform: scale(6.1);
+        background-color: $darkGreen;
+        border-color: $darkGreen;
+      }
     }
   }
   &__label {

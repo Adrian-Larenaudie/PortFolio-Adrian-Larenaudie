@@ -1,6 +1,6 @@
 import Aos from 'aos';
 import { Route, Routes } from 'react-router-dom';
-import { useEffect, useState } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react';
 import Theme from '../Theme';
 import Error from '../Error';
 import About from '../About';
@@ -14,7 +14,15 @@ import './style.scss';
 import 'aos/dist/aos.css';
 
 const App = () => {
-  const [themeDark, setThemeDark] = useState(true);
+  const [themeDark, setThemeDark] = useState(
+    JSON.parse(localStorage.getItem('themeDark')) != null ? JSON.parse(localStorage.getItem('themeDark')) : true,
+  );
+
+  const [screenWidth, setScreenWidth] = useState(document.documentElement.clientWidth);
+
+  window.addEventListener('resize', () => {
+    setScreenWidth(document.documentElement.clientWidth);
+  });
 
   useEffect(() => {
     Aos.init({ duration: 900 });
@@ -24,10 +32,11 @@ const App = () => {
     <div className={`app ${!themeDark ? 'app--light' : ''}`}>
       <Routes>
         <Route
+          exact
           path="/"
           element={(
             <>
-              <Navigation themeDark={themeDark} />
+              <Navigation screenWidth={screenWidth} />
               <Theme setThemeDark={setThemeDark} themeDark={themeDark} />
               <Home />
               <About />

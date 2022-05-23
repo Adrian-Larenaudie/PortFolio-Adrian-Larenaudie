@@ -30,6 +30,7 @@
     top: 15rem
   }
   &__title {
+    margin: .5rem;
     position: relative;
     z-index: 42;
     font-size: 4rem;
@@ -37,6 +38,7 @@
     margin-bottom: 3rem;
   }
   &__subtitle {
+    margin: .5rem;
     position: relative;
     z-index: 42;
     font-size: 3rem;
@@ -44,6 +46,7 @@
     margin: 3rem;
   }
   &__link {
+    margin: .5rem;
     position: relative;
     z-index: 42;
     padding: 1rem 2rem;

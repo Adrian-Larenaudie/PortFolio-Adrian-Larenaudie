@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const Theme = ({ setThemeDark, themeDark }) => {
   const handleChange = () => {
+    localStorage.setItem('themeDark', JSON.stringify(!themeDark));
     setThemeDark(!themeDark);
   };
   return (

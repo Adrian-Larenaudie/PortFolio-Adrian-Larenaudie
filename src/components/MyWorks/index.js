@@ -65,7 +65,7 @@ const MyWorks = () => (
         data-aos-anchor-placement="top-bottom"
       >
         <a target="_blank" href="https://github.com/Adrian-Larenaudie/Star-Wars-Challenge-BCode" rel="noreferrer">
-          <p className="worksContainer__label">Challenge d'intégration</p>
+          <p className="worksContainer__label">Challenge intég. SW</p>
         </a>
       </div>
 

@@ -1,13 +1,13 @@
 import Link from 'react-scroll/modules/components/Link';
+import PropTypes from 'prop-types';
 import './style.scss';
 import GitHubLogo from '../Svg/GitHubLogo';
 import LinkedinLogo from '../Svg/LinkedinLogo';
 import TwitterLogo from '../Svg/TwitterLogo';
 import data from '../Data/data';
 
-const Navigation = () => {
+const Navigation = ({ screenWidth }) => {
   const navData = data.navigation;
-
   return (
     <div
       className="navigation"
@@ -25,11 +25,21 @@ const Navigation = () => {
         <span>al</span>
       </div>
 
+      { screenWidth > 1099 && (
       <nav className="navigation__main">
         {navData.map((link) => (
           <Link activeClass="navigation__link--active" spy className="navigation__link" smooth duration={500} to={link.id} key={link.path}>{link.name}</Link>
         ))}
       </nav>
+      )}
+
+      { screenWidth < 1100 && (
+      <nav className="navigation__main">
+        {navData.map((link) => (
+          <Link activeClass="navigation__link--active" spy className="navigation__link" smooth duration={500} to={link.id} key={link.path} />
+        ))}
+      </nav>
+      )}
 
       <nav className="navigation__footer">
         <a href="https://twitter.com/Railedad?t=qefZIy7mK_0EU7MjhTchsw&s=03" target="_blank" rel="noreferrer">
@@ -45,6 +55,10 @@ const Navigation = () => {
 
     </div>
   );
+};
+
+Navigation.propTypes = {
+  screenWidth: PropTypes.number.isRequired,
 };
 
 export default Navigation;

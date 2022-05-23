@@ -1,7 +1,7 @@
 @import '../../styles/_vars.scss';
 
 .navigation {
-  z-index: 1;
+  z-index: 43;
   background-color: inherit;
   position: fixed;
   display: flex;
@@ -22,9 +22,11 @@
   &__main {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   &__link {
+    position: relative;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 1rem .5rem;
@@ -37,7 +39,8 @@
       border: 2px solid $darkText;
       transition: $fastTransition;
       position: absolute;
-      left: 2rem;
+      left: 5rem;
+      top: 1.2rem;
     }
 
     &--active {
@@ -60,7 +63,7 @@
   }
 
   &__footer {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;

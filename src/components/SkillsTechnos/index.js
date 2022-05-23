@@ -81,6 +81,7 @@ const SkillsTechnos = () => (
         data-aos-once="false"
         data-aos-delay="200"
         data-aos-duration="500"
+        data-aos-anchor-placement="top-bottom"
       >Soft
         <span> Skills</span>
       </h2>
@@ -92,7 +93,8 @@ const SkillsTechnos = () => (
           data-aos-once="false"
           data-aos-delay="300"
           data-aos-duration="500"
-        >Organisé
+          data-aos-anchor-placement="top-bottom"
+        >Organisation
         </li>
         <li
           className="softSkills__item"
@@ -101,7 +103,8 @@ const SkillsTechnos = () => (
           data-aos-once="false"
           data-aos-delay="400"
           data-aos-duration="500"
-        >Communiquant
+          data-aos-anchor-placement="top-bottom"
+        >Communication
         </li>
         <li
           className="softSkills__item"
@@ -110,6 +113,7 @@ const SkillsTechnos = () => (
           data-aos-once="false"
           data-aos-delay="500"
           data-aos-duration="500"
+          data-aos-anchor-placement="top-bottom"
         >Esprit d'équipe
         </li>
         <li
@@ -119,6 +123,7 @@ const SkillsTechnos = () => (
           data-aos-once="false"
           data-aos-delay="600"
           data-aos-duration="500"
+          data-aos-anchor-placement="top-bottom"
         >Gestion du stress
         </li>
         <li
@@ -128,6 +133,7 @@ const SkillsTechnos = () => (
           data-aos-once="false"
           data-aos-delay="700"
           data-aos-duration="500"
+          data-aos-anchor-placement="top-bottom"
         >Résolution de problème
         </li>
       </ul>

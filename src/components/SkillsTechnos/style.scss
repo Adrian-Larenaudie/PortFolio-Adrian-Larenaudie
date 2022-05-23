@@ -20,23 +20,41 @@
           margin-top: .3rem;
         }
       }
-      svg {
-        height: 4rem;
-        width: 4rem;
-        path {
-          fill: $darkText;
+      .techSvg {
+        svg {
+          height: 4rem;
+          width: 4rem;
+          path {
+            transition: $slowTransition;
+            fill: $darkText;
+          }
+          circle {
+            fill: $darkGreen;
+          }
         }
+        p {
+          transition: $slowTransition;
+        }
+        &:hover {
+          p {
+            transition: 0s;
+            color: $darkGreen;
+          }
+          path {
+            transition: 0s;
+            fill: $darkGreen;
+          }
       }
     }
   }
-
+}
   .softSkills {
     position: relative;
     z-index: 42;
     &__title {
       text-align: left;
       font-size: 3rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     &__liste {
         font-size: 1.5rem;
